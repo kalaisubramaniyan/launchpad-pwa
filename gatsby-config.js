@@ -5,11 +5,18 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: "src/images/icon.png",
+        name: 'Printdeal',
+        short_name: 'Printdeal',
+        start_url: '/',
+        background_color: '#ff7600',
+        theme_color: '#ff7600',
+        display: 'minimal-ui',
+        icon: 'src/images/favicon.png',
       },
     },
+    'gatsby-plugin-offline',
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
